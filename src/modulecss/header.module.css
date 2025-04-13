@@ -1,0 +1,22 @@
+#navContainer{
+    height: 70px;
+    background-color: rgb(95, 95, 232);
+    color: black;
+} 
+
+.listContainer{
+    
+    height:inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.listContainer li{
+    font-size: 25px;
+    font-weight: 800;
+    padding: 3rem;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
