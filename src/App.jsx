@@ -121,17 +121,113 @@
 
 // export default App
 
- 
-// 3] MODULE CSS
-import React from "react";
-import Header from "./modulecss/Header"
 
-const App = ()=>{
-    return(
-        <>
-        <Header/>
-        </>
-    )
+// // 3] MODULE CSS
+// import React from "react";
+// import Header from "./modulecss/Header"
+
+// const App = ()=>{
+//     return(
+//         <>
+//         <Header/>
+//         </>
+//     )
+// }
+
+// export default App
+
+
+// // PROPS IN REACT 
+// import React from "react"
+// import Child from "./Child"
+// const App = () => {
+//     return (
+//         <>
+//             <Child student="Akshay" sid={1} bool={true}/>
+//         </>
+//     )
+// }
+
+// export default App
+
+
+// // USING DESTRUCTURING 
+// import React from "react"
+// import Child from "./Child"
+// const App = () => {
+//     return (
+//         <>
+//             <Child student="Kumar" salary={78500} job={false}/>
+//         </>
+//     )
+// }
+// export default App
+
+
+// ARRAY DESTRUCTING
+// import React from "react";
+// import Child from "./Child"
+// const App = () => {
+//     let dev = ["Sam","Ram","Sham"]
+//     return (
+//         <>
+//             <Child emp={["Sanjay","Manoj","Anil"] }dev={dev}/>
+//         </>
+//     )
+// }
+// export default App 
+
+
+
+// SENDING "OBJECT" AS THE PROP VALUE 
+
+// import React from 'react'
+// import Child from './Child'
+
+// const App = () => {
+//     let player ={
+//         name:"Virat",
+//         sport:"Cricket"
+//     }
+//     return (
+//         <>
+//             <Child movie={{cinema:"KGF",hero:"Yash"}} player={player}/>
+//         </>
+//     )
+// }
+
+// export default App 
+// import React from 'react'
+// import Parent from './Parent'
+// const App = () => {
+//   return (
+//      <Parent/>
+//   )
+// }
+
+// export default App
+
+
+
+import React from 'react'
+// import ProductContext from './context/ProductContext'
+// import ProfileInfo from "./ProfileInfo"
+// import Parent from "./Parent" 
+// import ProfileContext from './context/ProfileContext'
+import CompoOne from './HOC/CompoOne'
+import CompoTwo from './HOC/CompoTwo'
+// import Product from "./Product"
+
+
+const App = () => {
+  return (
+    <>
+      <CompoOne/>
+      <CompoTwo/>
+    </>
+
+  )
 }
 
 export default App
+
