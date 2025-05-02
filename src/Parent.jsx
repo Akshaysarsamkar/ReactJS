@@ -1,4 +1,4 @@
-// SENDING MULTIPLE PROP VALUE UNDER SAME PROPNAME 
+// // SENDING MULTIPLE PROP VALUE UNDER SAME PROPNAME 
 // import React from 'react'
 // import Child from "./Child"
 // const Parent = () => {
@@ -57,9 +57,9 @@
 // export default Parent
 
 
-//DEFAULT PROPS
-// when sender is not sending any data but in receiver we except some data 
-//Note: default props will work only when sender not sending specific prop 
+// //DEFAULT PROPS
+// // when sender is not sending any data but in receiver we except some data 
+// //Note: default props will work only when sender not sending specific prop 
 // import React from 'react'
 // import Child from './Child'
 
@@ -105,7 +105,7 @@
 
 // export default Parent
 
-// SENDING PROPS IN BI-DIRECTIONAL ORDER (TOP----><------BUTTOM)
+// // SENDING PROPS IN BI-DIRECTIONAL ORDER (TOP----><------BUTTOM)
 // import React, { useState } from 'react'
 // import Child from './Child';
 

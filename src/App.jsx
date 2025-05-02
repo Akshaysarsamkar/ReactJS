@@ -164,7 +164,7 @@
 // export default App
 
 
-// ARRAY DESTRUCTING
+// // ARRAY DESTRUCTING
 // import React from "react";
 // import Child from "./Child"
 // const App = () => {
@@ -179,7 +179,7 @@
 
 
 
-// SENDING "OBJECT" AS THE PROP VALUE 
+// // SENDING "OBJECT" AS THE PROP VALUE 
 
 // import React from 'react'
 // import Child from './Child'
@@ -196,7 +196,7 @@
 //     )
 // }
 
-// export default App 
+// // export default App 
 // import React from 'react'
 // import Parent from './Parent'
 // const App = () => {
@@ -209,23 +209,61 @@
 
 
 
-import React from 'react'
+// import React,{Fragment} from 'react'
 // import ProductContext from './context/ProductContext'
 // import ProfileInfo from "./ProfileInfo"
 // import Parent from "./Parent" 
 // import ProfileContext from './context/ProfileContext'
-import CompoOne from './HOC/CompoOne'
-import CompoTwo from './HOC/CompoTwo'
+// import CompoOne from './HOC/CompoOne'
+// import CompoTwo from './HOC/CompoTwo'
 // import Product from "./Product"
+// import ConditionalRendring from './ConditionalRendring';
+// import ToggleTheme from './task/ToggleTheme';
+// import "./global.css"
+// import UncontrolledForm from './form/UncontrolledForm'
+// import ControlledForm from './form/ControlledForm'
+// import LifeCycleParent from './lifeCycle/LifeCycleParent'
+// import Reference from './Reference';
+// import VideoReference from './task/VideoReference';
+// import Example from './useEffectHook/Example';
+// import UseEffectParent from './useEffectHook/UseEffectParent';
 
+
+
+
+// const App = () => {
+//   let students = ["Akshay","sanika","Priya","Akshay"]
+//   return (
+//     <>
+//          {students.map((val,ind)=>{
+//           console.log("value" , val , "index",ind);
+          
+//           return(
+//             <Fragment key={ind}>
+//               <ul>
+//                 <li>{val}</li>
+//               </ul>
+//             </Fragment>
+//           )
+
+//          })}
+//     </>
+//   )
+// }
+
+// export default App
+
+
+import React from 'react'
+import AxiosWay from './APIcalls/AxiosWay'
+// import FetchMethod from './APIcalls/FetchMethod';
+// import FetchExample1 from './APIcalls/FetchExample1';
 
 const App = () => {
   return (
     <>
-      <CompoOne/>
-      <CompoTwo/>
+      <AxiosWay/>
     </>
-
   )
 }
 

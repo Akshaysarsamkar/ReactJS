@@ -63,17 +63,13 @@
 // export default Child 
 
 
-// ARRAY DESTRUCTUREING 
+// // ARRAY DESTRUCTUREING 
 
 // import React from "react";
-
 // const Child = (props)=>{
-
 //     let[d1,d2,d3] = props.dev
 //     let[e1,e2,e3] = props.emp
-
 //     console.log(props)
-
 //     return(
 //         <>
 //         <ul>
@@ -92,7 +88,7 @@
 // export default Child 
 
 
-// SENDING "OBJECT" AS THE PROP VALUE 
+// // SENDING "OBJECT" AS THE PROP VALUE 
 // import React from 'react'
 
 // const Child = (props) => {
@@ -110,7 +106,7 @@
 // export default Child 
 
 
-// SENDING MULTIPLE PROP VALUE UNDER SAME PROPNAME 
+// // SENDING MULTIPLE PROP VALUE UNDER SAME PROPNAME 
 // import React from 'react'
 
 // const Child = (props) => {
@@ -146,7 +142,7 @@
 // }
 // export default Child
 
-// PROPS-CHILDREN DESTUCTURE WHILE RECEIVING
+// // PROPS-CHILDREN DESTUCTURE WHILE RECEIVING
 // import React from 'react'
 // const Child = ({children}) => {
 //   console.log(children);
@@ -161,8 +157,8 @@
 
 
 
-//DEFAULT PROPS
-   // Way1
+// //DEFAULT PROPS
+//    // Way1
 // import React from 'react'
 
 // const Child = (props) => {
@@ -208,7 +204,7 @@
 
 // export default Child
 
-// SENDING PROPS IN BI-DIRECTIONAL ORDER (TOP----><------BUTTOM)
+// // SENDING PROPS IN BI-DIRECTIONAL ORDER (TOP----><------BUTTOM)
 // import React from 'react'
 
 // const Child = (props) => { 

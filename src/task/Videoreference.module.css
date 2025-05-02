@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+}
+
+.videoSection {
+   background-color: rgb(47, 43, 43);
+   padding: 0rem 1rem;
+}
+
+.btns{
+    margin-top: 1rem;
+    width: 450px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btns button{
+    height: 80px;
+    width: 80px;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns button:first-child{
+    background-color: darkorange;
+    border: none;
+    border-radius: 100%;
+}
+
+.btns button:last-child{
+    background-color: darkturquoise;
+    border: none;
+    border-radius: 100%;
+}
+
+.btns button:nth-child(2){
+    background-color: darkviolet;
+    border: none;
+    border-radius: 100%; 
+}
+

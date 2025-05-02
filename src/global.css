@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,7 +31,7 @@
 
 
 /* MyProfile CSS */ 
-.body{
+/*.body{
    width: 100%;
    height: 100vh;
    display: flex;
@@ -69,4 +69,17 @@ div{
 
 .img{
     border-radius: 100%;
+} */ 
+
+
+
+/* toggle theme css */
+.dark{
+    background-color: darkblue;
+    color: aliceblue;
+}
+
+.light{
+    background-color: aliceblue;
+    color: darkblue;
 }
