@@ -34,9 +34,10 @@ const AxiosWay = () => {
                 </tr>
             </thead>
             <tbody>
-                {user.map((val)=>{
+                {user.map((val,ind)=>{
                    console.log("current val" , val);
                    let{login,id,avatar_url} = val
+                //    console.log(ind)
                    
                    return(
                     <Fragment key={id}>

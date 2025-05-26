@@ -77,6 +77,7 @@ const ControlledForm = () => {
         e.preventDefault()
         console.log(inputdata);
         console.log(skill)
+       
 
     }
 

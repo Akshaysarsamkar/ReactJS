@@ -83,3 +83,7 @@ div{
     background-color: aliceblue;
     color: darkblue;
 }
+
+.active {
+  color:"red"
+}

@@ -237,7 +237,7 @@
 //     <>
 //          {students.map((val,ind)=>{
 //           console.log("value" , val , "index",ind);
-          
+
 //           return(
 //             <Fragment key={ind}>
 //               <ul>
@@ -254,15 +254,126 @@
 // export default App
 
 
+// import React from 'react'
+// // import AxiosWay from './APIcalls/AxiosWay'
+// // import PureCpmponent from './skip rendering/PureCpmponent'
+// // import UseMemoHook from './UseMemoHook/UseMemoHook'
+// // import ErrorBoundary from './errorBoundaries/ErrorBoundary'
+// // import Sender from './errorBoundaries/Sender'
+// // import UserInfo from './errorBoundaries/UserInfo'
+// // import FetchMethod from './APIcalls/FetchMethod';
+// // import FetchExample1 from './APIcalls/FetchExample1';
+
+// const App = () => {
+//   return (
+//     <>
+//       <Sender/>
+//     </>
+//   )
+// }
+
+// export default App
+
+
+
+// ROUTING CONCEPt
+
+// import React from 'react'
+// import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+
+
+// const App = () => {
+//   return (
+//     <>
+//       <BrowserRouter>
+//         <Routes>
+
+//           <Route path='/' element={<h1>Home page</h1>}/>
+//           <Route path="/manu" element={<h1>Manu page</h1>}/>
+//           <Route path="/setting" element={<h1>Setting</h1>}/>
+//           <Route path="*" element={<h1>Page not Found</h1>}/>
+//         </Routes>
+//       </BrowserRouter>
+//     </>
+//   )
+// }
+
+// export default App
+
+// import React from 'react'
+// import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+// import Home from './routing/Home';
+// import Manu from './routing/Manu';
+// import Setting from './routing/Setting';
+// import PageNotFound from './routing/PageNotFound';
+// import Layout from './routing/Layout';
+
+
+// const App = () => {
+//   return (
+//     <>
+//       <BrowserRouter>
+//         <Routes>
+
+//           <Route path='/' element={<Layout/>}>
+//             <Route path='/' index element={<Home />} />
+//             <Route path="/manu" element={<Manu />} />
+//             <Route path="/setting" element={<Setting />} />
+//             <Route path="*" element={<PageNotFound />} />
+//           </Route>
+//         </Routes>
+//       </BrowserRouter>
+//     </>
+//   )
+// }
+
+// export default App
+
+//SECOND WAY OF ROUTING
 import React from 'react'
-import AxiosWay from './APIcalls/AxiosWay'
-// import FetchMethod from './APIcalls/FetchMethod';
-// import FetchExample1 from './APIcalls/FetchExample1';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Layout from './routing/Layout';
+import Home from './routing/Home';
+import Manu from './routing/Manu';
+import Setting from './routing/Setting';
+import PageNotFound from './routing/PageNotFound';
 
 const App = () => {
+
+
+  let routing = createBrowserRouter([
+    {
+       path:"/",
+       element:<Layout/>,
+       children:[
+        {
+          index:true,
+          element:<Home/>
+         },
+         {
+           path:"/manu",
+           element:<Manu/>
+         },
+         {
+          path:"/setting",
+          element:<Setting/>
+         },
+         {
+          path:"*",
+          element:<PageNotFound/>
+         }
+       ] 
+    }
+])
+
+
+
+
+
   return (
     <>
-      <AxiosWay/>
+        <RouterProvider router={routing}/>
+      
     </>
   )
 }

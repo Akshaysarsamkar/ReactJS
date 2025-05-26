@@ -19,7 +19,7 @@ useEffect(()=>{
        getApi()
    }catch(e){
        console.log(e);
-       
+
    }
 },[])
 
